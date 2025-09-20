@@ -1,6 +1,7 @@
 package com.matt5262.inventoryMenu.listeners;
 
 import com.matt5262.inventoryMenu.holders.MainMenuHolder;
+import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -20,6 +21,10 @@ public class MainMenuListener implements Listener {
 
             event.setCancelled(true);
             // Cancels the item move
+
+            if (event.getCurrentItem() == null || event.getCurrentItem().getType() == Material.AIR) {
+                return;
+            }// makes sure you click on something and not an empty slot in the menu or else it would send errors
 
             if (event.getInventory().getHolder() instanceof MainMenuHolder) {
                 // if the owner of the menu is MainMenuHolder then...
