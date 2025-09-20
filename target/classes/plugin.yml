@@ -1,8 +1,0 @@
-name: InventoryMenu
-version: '1.0'
-main: com.matt5262.inventoryMenu.InventoryMenu
-api-version: '1.21'
-commands:
-  menu:
-    description: Opens the test menu
-    usage: /<command>
