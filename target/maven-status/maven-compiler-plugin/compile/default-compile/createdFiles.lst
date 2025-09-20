@@ -1,0 +1,5 @@
+com\matt5262\inventoryMenu\commands\MenuCommand.class
+com\matt5262\inventoryMenu\holders\MainMenuHolder.class
+com\matt5262\inventoryMenu\listeners\MainMenuListener.class
+com\matt5262\inventoryMenu\InventoryMenu.class
+com\matt5262\inventoryMenu\listeners\MainMenuListener$1.class
